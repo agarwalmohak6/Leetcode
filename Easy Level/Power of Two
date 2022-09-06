@@ -1,0 +1,9 @@
+// The numbers who are power of 2 will always have n & (n-1) equals to 0.
+
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if(n<=0)
+            return false;
+        return (n & n-1)==0;
+    }
+}
